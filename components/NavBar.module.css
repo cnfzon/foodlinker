@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #f0fdf4;
+  border-bottom: 1px solid #e5e7eb;
+}
+.logo a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #22c55e;
+  text-decoration: none;
+}
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu a {
+  color: #374151;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.menu a:hover {
+  color: #16a34a;
+}
+.authBtn {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem 1.1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.authBtn:hover {
+  background: #16a34a;
+} 

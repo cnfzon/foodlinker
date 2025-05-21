@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #dcfce7;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand img {
+  height: 28px;
+}
+
+.brand span {
+  color: #111827;
+  font-weight: bold;
+}
+
+.columns {
+  display: flex;
+  gap: 2rem;
+}
+
+.columns h4 {
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.columns p {
+  margin: 0.2rem 0;
+  cursor: pointer;
+  color: #374151;
+} 

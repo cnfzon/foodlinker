@@ -1,0 +1,63 @@
+.bg {
+  min-height: 100vh;
+  background: #f7fdf9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 500px;
+  width: 100%;
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slogan {
+  color: #22c55e;
+  font-size: 1.05rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 1px;
+}
+.title {
+  color: #1f2937;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+.points {
+  font-size: 1.2rem;
+  color: #22c55e;
+  margin-bottom: 1.2rem;
+}
+.section {
+  margin-bottom: 1.2rem;
+  width: 100%;
+}
+.section h2 {
+  color: #1f2937;
+  font-size: 1.08rem;
+  margin-bottom: 0.5rem;
+}
+.section ul {
+  padding-left: 1.2rem;
+  color: #1f2937;
+}
+.button {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.button:hover {
+  background: #16a34a;
+} 

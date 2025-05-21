@@ -1,0 +1,31 @@
+.hero {
+  /* Hero 區塊主體樣式 */
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f0fdf4;
+}
+
+.hero h1 {
+  color: #111827;
+}
+
+.hero p {
+  color: #374151;
+}
+
+.cta {
+  /* Call to Action 按鈕樣式 */
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cta:hover {
+  background-color: #16a34a;
+} 

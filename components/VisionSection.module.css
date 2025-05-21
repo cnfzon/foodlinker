@@ -1,0 +1,39 @@
+.vision {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #fffef7;
+}
+
+.vision h2 {
+  color: #111827;
+}
+
+.vision p {
+  color: #374151;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 160px;
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.card span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #374151;
+} 

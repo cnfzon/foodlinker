@@ -1,0 +1,108 @@
+.bg {
+  min-height: 100vh;
+  background: #f7faf7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem 1rem;
+}
+.illustration {
+  flex: 1 1 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.illustration img {
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+}
+.card {
+  flex: 1 1 340px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(34,197,94,0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+.subtitle {
+  color: #22c55e;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.googleBtn {
+  background: #fff;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: background 0.2s;
+  width: 100%;
+  font-weight: 500;
+}
+.googleBtn:hover {
+  background: #f0fdf4;
+}
+.roles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+  width: 100%;
+}
+.roles span {
+  color: #1f2937;
+  margin-bottom: 0.2rem;
+}
+.roleBtn {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.roleBtn:hover {
+  background: #16a34a;
+}
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0.5rem;
+  }
+  .illustration {
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  .card {
+    width: 100%;
+    min-width: 0;
+    padding: 2rem 1rem 1.5rem 1rem;
+  }
+} 
