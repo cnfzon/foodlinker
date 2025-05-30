@@ -1,0 +1,189 @@
+/* 頁面背景樣式 */
+.bg {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f5f9f5; /* 淺綠色背景 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* 主要容器樣式 */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 600px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+}
+
+/* 左側圖片區域樣式 */
+.leftSection {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+/* 右側表單區域樣式 */
+.rightSection {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+
+/* 圖片容器樣式 */
+.illustration {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* 卡片容器樣式 */
+.card {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* 標題樣式 */
+.title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* 表單樣式 */
+.form {
+  width: 100%;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: all 0.2s;
+  background-color: #f8f9fa;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+/* 錯誤訊息樣式 */
+.error {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #fff5f5;
+  border-radius: 4px;
+}
+
+/* 按鈕樣式 */
+.googleBtn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.googleBtn:hover {
+  background-color: #45a049;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.roleBtn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 1rem;
+}
+
+.roleBtn:hover {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+  transform: translateY(-1px);
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .leftSection {
+    padding: 1rem;
+    min-height: 300px;
+  }
+
+  .rightSection {
+    padding: 2rem;
+  }
+
+  .illustration img {
+    max-height: 250px;
+  }
+} 

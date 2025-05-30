@@ -1,0 +1,237 @@
+/* 頁面容器 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem; /* 增加上下內邊距 */
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+/* 頁面標題 */
+.title {
+  font-size: 2.75rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 4rem; /* 增加標題下方間距 */
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* 主要內容區塊 */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* 聯絡資訊區塊 */
+.contactInfo {
+  background: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  padding: 3rem;
+  box-shadow: var(--card-shadow);
+}
+
+.infoTitle {
+  font-size: 1.75rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: #4B5563;
+}
+
+.infoItem:last-child {
+  margin-bottom: 0;
+}
+
+.infoIcon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #44B36D;
+}
+
+/* 聯絡表單區塊 */
+.contactForm {
+  background: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  padding: 3rem;
+  box-shadow: var(--card-shadow);
+}
+
+.formTitle {
+  font-size: 1.75rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #3BAE79;
+  border-radius: 8px;
+  background-color: #F0FAF4;
+  color: #333;
+  font-size: 16px;
+  font-family: var(--font-noto-sans-tc), system-ui, -apple-system, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #888;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #2C8D5A;
+  background-color: #E6F6EC;
+  box-shadow: 0 0 0 3px rgba(44, 141, 90, 0.1);
+}
+
+.textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: #3BAE79;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-noto-sans-tc), system-ui, -apple-system, sans-serif;
+}
+
+.submitButton:hover {
+  background-color: #2C8D5A;
+  transform: translateY(-1px);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+  background-color: #267A4D;
+}
+
+/* 表單群組樣式 */
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup:last-child {
+  margin-bottom: 0;
+}
+
+/* 錯誤狀態樣式 */
+.input.error,
+.textarea.error {
+  border-color: #EF4444;
+  background-color: #FEF2F2;
+}
+
+.input.error:focus,
+.textarea.error:focus {
+  border-color: #DC2626;
+  background-color: #FEE2E2;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.errorMessage {
+  color: #DC2626;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 1024px) {
+  .container {
+    padding: 3rem 1.5rem;
+  }
+
+  .content {
+    gap: 2rem;
+  }
+
+  .contactInfo,
+  .contactForm {
+    padding: 2.5rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .infoTitle,
+  .formTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2.5rem 1rem;
+  }
+
+  .title {
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .contactInfo,
+  .contactForm {
+    padding: 2rem;
+  }
+
+  .infoTitle,
+  .formTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .infoItem {
+    margin-bottom: 1.25rem;
+  }
+
+  .formGroup {
+    margin-bottom: 1.25rem;
+  }
+} 

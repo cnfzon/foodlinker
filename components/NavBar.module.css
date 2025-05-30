@@ -1,43 +1,207 @@
-.nav {
+/* 導覽列容器 */
+.navbar {
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* 主要容器 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo 樣式 */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3BAE79;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #2C8D5A;
+}
+
+/* 導覽連結區域 */
+.links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* 導覽連結 */
+.link {
+  color: #4B5563;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #3BAE79;
+}
+
+/* 當前頁面高亮效果 */
+.link.active {
+  color: #3BAE79;
+}
+
+.link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3BAE79;
+  border-radius: 2px;
+  transform: scaleX(1);
+  transition: transform 0.3s ease;
+}
+
+.link:not(.active)::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3BAE79;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+}
+
+/* 鎖定圖示 */
+.lockIcon {
+  font-size: 0.75rem;
+  margin-left: 0.25rem;
+  opacity: 0.7;
+}
+
+/* 使用者區域 */
+.userSection {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background: #f0fdf4;
-  border-bottom: 1px solid #e5e7eb;
 }
-.logo a {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #22c55e;
-  text-decoration: none;
-}
-.menu {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.menu a {
-  color: #374151;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-.menu a:hover {
-  color: #16a34a;
-}
-.authBtn {
-  background: #22c55e;
-  color: #fff;
+
+/* 登入按鈕 */
+.loginButton {
+  background-color: #3BAE79;
+  color: #FFFFFF;
   border: none;
-  border-radius: 5px;
-  padding: 0.4rem 1.1rem;
-  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
   font-weight: 500;
-  transition: background 0.2s;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.authBtn:hover {
-  background: #16a34a;
+
+.loginButton:hover {
+  background-color: #2C8D5A;
+  transform: translateY(-1px);
+}
+
+/* 使用者選單 */
+.userMenu {
+  position: relative;
+}
+
+/* 使用者按鈕 */
+.userButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #4B5563;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.userButton:hover {
+  color: #3BAE79;
+}
+
+.userButton.active {
+  color: #3BAE79;
+}
+
+/* 下拉箭頭 */
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid currentColor;
+  transition: transform 0.3s ease;
+}
+
+.userButton.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* 下拉選單 */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* 下拉選單項目 */
+.dropdownItem {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #4B5563;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropdownItem:hover {
+  background-color: #F0FAF4;
+  color: #3BAE79;
+}
+
+/* 響應式設計 */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .links {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
 } 

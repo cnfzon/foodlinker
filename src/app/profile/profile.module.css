@@ -1,0 +1,142 @@
+/* 頁面容器 */
+.container {
+  min-height: 100vh;
+  padding: 6rem 2rem 2rem;
+  background-color: #f5f9f5;
+}
+
+/* 個人資料卡片 */
+.profileCard {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* 標題樣式 */
+.title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin: 2rem 0 1rem;
+}
+
+/* 資訊區塊 */
+.infoSection {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.infoGroup {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.value {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+/* 按鈕區域 */
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.editButton,
+.historyButton {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.editButton {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #45a049;
+  transform: translateY(-1px);
+}
+
+.historyButton {
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.historyButton:hover {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+  transform: translateY(-1px);
+}
+
+/* 預留擴充區域 */
+.placeholder {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.featureList li {
+  padding: 0.75rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .container {
+    padding: 5rem 1rem 1rem;
+  }
+
+  .profileCard {
+    padding: 1.5rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+} 
