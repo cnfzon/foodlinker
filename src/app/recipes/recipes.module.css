@@ -1,0 +1,212 @@
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #F0FAF4;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #1a202c;
+  margin-bottom: 1rem;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #4a5568;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.filterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.tagButton {
+  padding: 0.5rem 1rem;
+  border: 2px solid #3BAE79;
+  border-radius: 20px;
+  background: transparent;
+  color: #3BAE79;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 500;
+}
+
+.tagButton:hover {
+  background-color: rgba(59, 174, 121, 0.1);
+}
+
+.tagButton.selected {
+  background-color: #3BAE79;
+  color: white;
+}
+
+.recipeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.recipeCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipeCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.recipeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.recipeCard:hover .recipeImage {
+  transform: scale(1.05);
+}
+
+.recipeInfo {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.difficulty,
+.cookingTime {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.9);
+  color: #3BAE79;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.recipeContent {
+  padding: 1.5rem;
+}
+
+.recipeTitle {
+  font-size: 1.25rem;
+  color: #1a202c;
+  margin-bottom: 0.75rem;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 600;
+}
+
+.recipeDescription {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.tag {
+  padding: 0.25rem 0.75rem;
+  background-color: #F0FAF4;
+  color: #3BAE79;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.viewButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #3BAE79;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 500;
+}
+
+.viewButton:hover {
+  background-color: #2d8c5f;
+  transform: translateY(-1px);
+}
+
+.viewButton:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .recipeGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .filterContainer {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .recipeGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .recipeGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} 

@@ -9,6 +9,7 @@ import styles from './NavBar.module.css';
 // 定義導航項目
 const NAV_ITEMS = [
   { path: '/', label: '首頁', requiresAuth: false },
+  { path: '/recipes', label: '食譜', requiresAuth: false },
   { path: '/map', label: '地圖', requiresAuth: true },
   { path: '/dashboard', label: '儀表板', requiresAuth: true },
   { path: '/weigh', label: '秤重', requiresAuth: true },
