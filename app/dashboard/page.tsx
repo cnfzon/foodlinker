@@ -10,14 +10,14 @@ export default function DashboardPage() {
         <div className={styles.section}>
           <h2>上傳紀錄</h2>
           <ul>
-            <li>2024/06/01 麵包（3份）</li>
-            <li>2024/05/28 蔬菜（2份）</li>
+            <li>2025/06/01 麵包（3份）</li>
+            <li>2025/05/28 蔬菜（2份）</li>
           </ul>
         </div>
         <div className={styles.section}>
           <h2>最近活動</h2>
           <ul>
-            <li>2024/06/01 兌換「環保袋」</li>
+            <li>2025/04/23 兌換「環保袋」</li>
           </ul>
         </div>
       </div>

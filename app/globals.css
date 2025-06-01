@@ -51,6 +51,11 @@ a {
   box-shadow: var(--card-shadow);
 }
 
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+
 /* 確保 Next.js 的根元素也填滿視窗 */
 #__next {
   min-height: 100vh;

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_TC } from "next/font/google";
 import "./globals.css";
-import NavBar from '../../components/NavBar';
+import NavBar from '@/components/NavBar';
 import { AuthProvider } from '@/contexts/AuthContext';
 
 const notoSansTC = Noto_Sans_TC({

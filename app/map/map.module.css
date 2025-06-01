@@ -1,0 +1,283 @@
+.bg {
+  min-height: 100vh;
+  background: #f7fdf9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 500px;
+  width: 100%;
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slogan {
+  color: #22c55e;
+  font-size: 1.05rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 1px;
+}
+.title {
+  color: #1f2937;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+.search {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  color: #1f2937;
+  background: #f7fdf9;
+}
+.mapEmbed {
+  width: 100%;
+  height: 320px;
+  background: #f0fdf4;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22c55e;
+  font-size: 1.1rem;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+.list li {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  color: #1f2937;
+}
+.button {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.button:hover {
+  background: #16a34a;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: calc(100vh - 64px);
+  background-color: #F0FAF4;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  color: #2C3E50;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.content {
+  display: flex;
+  gap: 2rem;
+  height: calc(100vh - 200px); /* 確保內容區塊有高度 */
+  min-height: 600px; /* 防止太小 */
+}
+
+.mapOuter {
+  flex: 1;
+  min-height: 500px; /* 最少高度 */
+  display: flex;
+  flex-direction: column;
+}
+
+.mapWrapper {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mapContainer {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #3BAE79;
+}
+
+/* 必加，防止拼圖 */
+.mapContainer .leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative;
+  z-index: 0;
+}
+
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.locationList {
+  width: 350px;
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 2px solid #3BAE79;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.locationList h2 {
+  color: #2C3E50;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3BAE79;
+}
+
+.locationList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.locationItem {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #E2E8F0;
+}
+
+.locationItem:hover {
+  background-color: #F0FAF4;
+  transform: translateY(-2px);
+}
+
+.locationItem.selected {
+  background-color: #3BAE79;
+  color: white;
+}
+
+.locationItem.selected h3,
+.locationItem.selected p {
+  color: white;
+}
+
+.locationItem h3 {
+  color: #2C3E50;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.locationItem p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.popup {
+  padding: 0.5rem;
+}
+
+.popup h3 {
+  color: #2C3E50;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.popup p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #F0FAF4;
+  border-radius: 12px;
+  border: 2px solid #3BAE79;
+}
+
+.loading p {
+  color: #3BAE79;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* 響應式設計 */
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .mapWrapper {
+    height: 500px;
+  }
+
+  .locationList {
+    width: 100%;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .mapWrapper {
+    height: 400px;
+  }
+
+  .locationList {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mapWrapper {
+    height: 300px;
+  }
+
+  .locationList {
+    max-height: 250px;
+  }
+}
