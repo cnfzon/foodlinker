@@ -6,7 +6,7 @@ export default function DashboardPage() {
       <div className={styles.box}>
         <div className={styles.slogan}>一起創造不浪費的社會</div>
         <h1 className={styles.title}>我的儀表板</h1>
-        <div className={styles.points}>目前積分：<b>120</b></div>
+        <div className={styles.points}>目前積分：<b>48</b></div>
         <div className={styles.section}>
           <h2>上傳紀錄</h2>
           <ul>
