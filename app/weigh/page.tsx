@@ -19,7 +19,7 @@ export default function WeighPage() {
           <h2 className={styles.historyTitle}>過去上傳記錄</h2>
           <ul className={styles.historyList}>
             <li>2024/06/01　300g</li>
-            <li>2024/05/28　800g</li>
+            <li>2024/05/28　900g</li>
           </ul>
         </div>
       </div>
