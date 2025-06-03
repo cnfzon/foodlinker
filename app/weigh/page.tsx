@@ -8,7 +8,7 @@ export default function WeighPage() {
         <div className={styles.slogan}>讓剩食轉化為永續價值</div>
         <h1 className={styles.title}>廚餘秤重回報</h1>
         <form className={styles.form}>
-          <input className={styles.input} type="number" placeholder="請輸入重量 (kg)" />
+          <input className={styles.input} type="number" placeholder="請輸入重量 (g)" />
           <label className={styles.uploadLabel}>
             上傳食物圖片
             <input className={styles.fileInput} type="file" accept="image/*" />
